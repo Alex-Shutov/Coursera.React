@@ -1,0 +1,35 @@
+.row-header{
+    margin: 0px auto;
+    padding: 0px;
+}
+.row-content{
+    margin: 0px auto;
+    padding: 50px 0px;
+    min-height: 400px;
+}
+.row-content:not(.row-content:last-of-type){
+    border-bottom: 1px ridge;
+}
+.footer{
+    background-color: #f9eadf;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+.jumbotron {
+    padding: 70px 30px;
+    margin: 0px auto;
+    background: #a8e7ad;
+}
+.address{
+    font-size: 80%;
+    margin: 0;
+    color: #0f0f0f;
+}
+
+.mainRow{
+    padding: 50px 0px 50px 0px;
+    margin: 0px auto;
+}
+.mainContainer{
+    padding-bottom: 70px;
+}
