@@ -60,11 +60,6 @@ html{
     padding-top: 15px;
 }
 .buttonHeader{
-    background-color: #fdc431;
-    border-radius: 10px;
-    border: 0px;
-}
-.buttonHeader a{
     display: block;
     padding: 10px 25px 10px 25px;
     width: 100%;
@@ -72,6 +67,9 @@ html{
     color: #fdfffd;
     font-weight: 600;
     font-size: 20px;
+    background-color: #fdc431;
+    border-radius: 10px;
+    border: 0px;
 }
 .reserveButton > button{
     padding: 5px 15px;
