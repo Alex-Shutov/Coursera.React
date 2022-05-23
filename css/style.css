@@ -36,3 +36,48 @@
 .cardBlock{
     padding-bottom: 20px;
 }
+nav{
+    background-color: #68b44b!important;
+}
+html{
+    scroll-behavior: smooth;
+}
+.formWrapper{
+    padding: 0px 0px 5px 0px !important;
+    border: 1px rgba(208, 200, 200, 0.48) solid;
+    border-radius: 10px;
+}
+.formWrapper > div:first-of-type{
+    border-radius: 10px 10px 0px 0px;
+    color: #fdfffd;
+    background-color: #fdc431;
+    padding: 10px 0px 10px 25px;
+}
+.formWrapper > div:first-of-type>h3{
+    font-weight: 700;
+}
+.buttonWrapper{
+    padding-top: 15px;
+}
+.buttonHeader{
+    background-color: #fdc431;
+    border-radius: 10px;
+    border: 0px;
+}
+.buttonHeader a{
+    display: block;
+    padding: 10px 25px 10px 25px;
+    width: 100%;
+    height: 100%;
+    color: #fdfffd;
+    font-weight: 600;
+    font-size: 20px;
+}
+.reserveButton > button{
+    padding: 5px 15px;
+    border: 0;
+    color: #fdfffd;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
