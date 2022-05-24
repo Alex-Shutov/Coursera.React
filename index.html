@@ -29,13 +29,13 @@
                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
             <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginModal">
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>
         </div>
     </div>
 </nav>
-<div id="loginModal" class="modal fade" role="dialog">
+<div id="logModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
         <!-- Modal content-->
         <div class="modal-content">
@@ -83,8 +83,7 @@
                 <img src="img/logo.png" class="img-fluid">
             </div>
             <div class="col-sm-auto align-self-center buttonWrapper">
-                <a role="button" class="buttonHeader btn btn-block nav-link btn-warning"
-                    data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
+                <a role="button" class="buttonHeader btn btn-block nav-link btn-warning" id="reserveButton">Reserve Table</a>
             </div>
         </div>
     </div>
@@ -130,7 +129,7 @@
                     </div>
                     <div class="form-group row smokeSection">
                         <label class="col-md-3 col-form-label">Section</label>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <div class="btn-group btn-group-toggle">
                             <label class="btn btn-success active">
                                 <input type="radio" name="options" id="option1" autocomplete="off" checked> Non Smoking
                             </label>
@@ -319,8 +318,13 @@
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
+    jQuery(document).ready(function($) {
+        $('#loginModal').click(function (){
+            $('#logModal').modal('show');
+        });
+        $('#reserveButton').click(()=>{
+            $('#reserveModal').modal('show')
+        })
     });
 </script>
 </body>
